@@ -3,3 +3,4 @@ type: module
 description: 'Acme demo module'
 package: Sample
 core: 8.x
+configure: admin/config/acme

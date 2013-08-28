@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * hook_menu
+ */
+function acme_menu(){
+
+  $items = array();
+  
+  $items['/admin/config/acme'] = array(
+    'title' => 'Acme Settings',
+    'description' => 'Acme settings.',
+    'route_name' => 'acme_settings_form',
+  );
+
+  return $items;
+}
+
