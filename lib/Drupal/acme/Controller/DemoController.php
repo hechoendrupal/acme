@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\slang\Controller;
+namespace Drupal\acme\Controller;
 
 use Drupal\Core\Controller\ControllerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -38,9 +38,9 @@ class DemoController implements ControllerInterface {
    */
   public function helloAction($name) {
     $twig = $this->twig;
-    $path = drupal_get_path('module', 'slang') . '/templates/example.html.twig';
+    $path = drupal_get_path('module', 'acme') . '/templates/hello.html.twig';
     $template = $twig->loadTemplate($path);
-    drupal_set_title("Slang demo");
+    drupal_set_title("Acme demo");
     return $template->render(array('name' => $name));
   }
 

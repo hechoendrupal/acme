@@ -9,8 +9,7 @@ function acme_menu(){
   
   $items['/admin/config/acme'] = array(
     'title' => 'Acme Settings',
-    'description' => 'Acme settings.',
-    'route_name' => 'acme_settings_form',
+    'description' => 'Acme settings',
   );
 
   return $items;
