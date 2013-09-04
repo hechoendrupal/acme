@@ -37,9 +37,8 @@ class DemoController implements ContainerInjectionInterface {
    * @param String $name
    */
   public function helloAction($name) {
-    $twig = $this->twig;
     $path = drupal_get_path('module', 'acme') . '/templates/hello.html.twig';
-    $template = $twig->loadTemplate($path);
+    $template = $this->twig->loadTemplate($path);
     drupal_set_title("Acme demo");
     return $template->render(array('name' => $name));
   }
