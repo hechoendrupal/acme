@@ -1,6 +1,5 @@
 name: Acme
 type: module
-description: 'Acme demo module'
+description: 'Acme Demo Module'
 package: Sample
 core: 8.x
-configure: admin/config/acme
