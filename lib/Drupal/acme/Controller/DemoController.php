@@ -2,13 +2,13 @@
 
 namespace Drupal\acme\Controller;
 
-use Drupal\Core\Controller\ControllerInterface;
+use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Slang Default Controller
  */
-class DemoController implements ControllerInterface {
+class DemoController implements ContainerInjectionInterface {
   
  /**
   * @var \TwigEnvironment

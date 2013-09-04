@@ -1,17 +1,3 @@
 <?php
 
-/**
- * hook_menu
- */
-function acme_menu(){
-
-  $items = array();
-  
-  $items['/admin/config/acme'] = array(
-    'title' => 'Acme Settings',
-    'description' => 'Acme settings',
-  );
-
-  return $items;
-}
-
+// Drupal needs this file even if is empty
