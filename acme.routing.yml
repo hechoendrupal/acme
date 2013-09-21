@@ -1,6 +1,6 @@
 acme_hello_name:
   path: '/acme/hello/{name}'
-  defaults: 
+  defaults:
     _controller: '\Drupal\acme\Controller\DemoController::helloAction'
   requirements:
     _permission: "view content"
